@@ -67,6 +67,7 @@ public class HockeyActivity extends Activity
 				intent = new Intent(HockeyActivity.this,AboutGameActivity.class);
 			}
 			startActivity(intent);
+			overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
 		}
 		
 	}
