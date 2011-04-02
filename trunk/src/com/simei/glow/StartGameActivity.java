@@ -56,8 +56,10 @@ public class StartGameActivity extends Activity
 		@Override
 		public void onClick(View v)
 		{
+			Intent intent = null;
 			if(v == easyBut)//简单
 			{
+				intent = new Intent(StartGameActivity.this,GameActivity.class);
 			}
 			else if(v == hardBut)//中等
 			{
@@ -71,7 +73,11 @@ public class StartGameActivity extends Activity
 			else if(v == backBut)//退出
 			{
 				StartGameActivity.this.finish();
+				overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+				return;
 			}
+			startActivity(intent);
+			overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
 		}
 		
 	}
