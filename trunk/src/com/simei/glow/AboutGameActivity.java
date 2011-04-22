@@ -4,5 +4,5 @@ import android.app.Activity;
 
 public class AboutGameActivity extends Activity
 {
-
+    
 }
