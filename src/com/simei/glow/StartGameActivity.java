@@ -56,10 +56,17 @@ public class StartGameActivity extends Activity
 		@Override
 		public void onClick(View v)
 		{
-			Intent intent = null;
+ 
+			Intent intent = new Intent();
+ 
+ 
 			if(v == easyBut)//¼òµ¥
 			{
-				intent = new Intent(StartGameActivity.this,GameActivity.class);
+ 
+				intent.setClass(StartGameActivity.this, PlayActivity.class);
+				startActivity(intent);
+				
+ 
 			}
 			else if(v == hardBut)//ÖÐµÈ
 			{
