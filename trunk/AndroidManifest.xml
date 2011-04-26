@@ -16,6 +16,7 @@
 		<activity android:name=".glow.StartGameActivity"/>
 		<activity android:name=".glow.SettingGameActivity"/>
 		<activity android:name=".glow.AboutGameActivity"/>
+		<activity android:name=".glow.PlayActivity"/>
     </application>
     <uses-sdk android:minSdkVersion="8" />
 
